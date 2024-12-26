@@ -39,3 +39,7 @@ h2 {
     rgba(2, 2, 28, 1) 57%
   ); /* Chrome10-25,Safari5.1-6 */
 }
+
+.border-gradient {
+  border-image: linear-gradient(to bottom, rgb(2, 2, 28), #fff, rgb(2, 2, 28)) 1;
+}

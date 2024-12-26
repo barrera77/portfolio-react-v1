@@ -39,6 +39,22 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+
+          <li
+            className={`${
+              active === "resume" ? "text-white" : "text-inactive"
+            } hover:text-white hover:font-bold text-[18px] cursor-pointer font-medium border-l border-l-white pl-8`}
+            onClick={() => {
+              setActive("resume");
+            }}
+          >
+            <a
+              href="#"
+              className="border-secondary border py-1 px-3 rounded-md"
+            >
+              My Resume
+            </a>
+          </li>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -68,7 +84,19 @@ const Navbar = () => {
                   <a href={`#${link.id}`}>{link.title}</a>
                 </li>
               ))}
-              
+
+              <hr />
+
+              <li
+                className={`${
+                  active === "resume" ? "text-white" : "text-inactive"
+                } hover:text-white hover:font-bold text-[18px] cursor-pointer font-medium`}
+                onClick={() => {
+                  setActive("resume");
+                }}
+              >
+                My Resume
+              </li>
             </ul>
           </div>
         </div>
