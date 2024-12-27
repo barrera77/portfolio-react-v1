@@ -23,6 +23,7 @@ const preloadTexture = async (url) => {
   });
 };
 
+// Component to render the ball
 const Ball = (props) => {
   const [decal] = useTexture([props.icon]);
   return (
