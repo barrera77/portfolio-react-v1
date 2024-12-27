@@ -21,10 +21,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
+  /* {
     name: "Blazor",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg",
-  },
+  }, */
   {
     name: "SQL Server",
     icon: sqlserver,
@@ -41,18 +41,18 @@ const technologies = [
     name: "CSS",
     icon: css,
   },
-  {
+  /*   {
     name: "Docker",
     icon: docker,
-  },
+  }, */
   {
     name: "HTML",
     icon: html,
   },
-  {
+  /* {
     name: "mySQL",
     icon: mysql,
-  },
+  }, */
   {
     name: "NodeJS",
     icon: nodejs,
@@ -65,10 +65,10 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  {
+  /*  {
     name: "DotNETCore",
     icon: netcore,
-  },
+  }, */
 ];
 export const navLinks = [
   {
