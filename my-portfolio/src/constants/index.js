@@ -1,4 +1,17 @@
-import { mongodb, react, nodejs, docker, css, javascript } from "../assets";
+import {
+  mongodb,
+  react,
+  nodejs,
+  docker,
+  css,
+  javascript,
+  sqlserver,
+  csharp,
+  bootstrap,
+  html,
+  mysql,
+  netcore,
+} from "../assets";
 
 const education = [];
 const projects = [];
@@ -14,15 +27,15 @@ const technologies = [
   },
   {
     name: "SQL Server",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg",
+    icon: sqlserver,
   },
   {
     name: "Bootstrap",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg",
+    icon: bootstrap,
   },
   {
     name: "C#",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
+    icon: csharp,
   },
   {
     name: "CSS",
@@ -34,11 +47,11 @@ const technologies = [
   },
   {
     name: "HTML",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    icon: html,
   },
   {
     name: "mySQL",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    icon: mysql,
   },
   {
     name: "NodeJS",
@@ -54,7 +67,7 @@ const technologies = [
   },
   {
     name: "DotNETCore",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg",
+    icon: netcore,
   },
 ];
 export const navLinks = [
