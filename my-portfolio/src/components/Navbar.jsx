@@ -11,9 +11,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 `}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -22,10 +22,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-13 h-12 object-contain" />
+          <img
+            src={logo}
+            alt="logo"
+            className="lg:w-[100px] h-auto xs:w-[65px] object-contain"
+          />
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden sm:flex flex-row  lg:gap-12 md:gap-7 sm:gap-5">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -43,14 +47,14 @@ const Navbar = () => {
           <li
             className={`${
               active === "resume" ? "text-white" : "text-inactive"
-            } hover:text-white hover:font-bold text-[18px] cursor-pointer font-medium border-l border-l-white pl-8`}
+            }  text-[18px] cursor-pointer font-medium border-l border-l-white pl-8`}
             onClick={() => {
               setActive("resume");
             }}
           >
             <a
               href="#"
-              className="border-secondary border py-1 px-3 rounded-md"
+              className="border-secondary border py-1 px-3 rounded-md hover:text-primary hover:bg-white hover:border-white"
             >
               My Resume
             </a>

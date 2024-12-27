@@ -10,6 +10,9 @@ export default {
         white: "#f2f2f2",
         inactive: "#aaa6c3",
       },
+      screens: {
+        xs: "300px",
+      },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/background-8.png')",
       },
