@@ -11,14 +11,14 @@ const fadeIn = (direction = "", type = "tween", delay = 0, duration = 1) => ({
 });
 
 const About = () => {
-  const ref = React.useRef(null); // Ref to track the element
-  const isInView = useInView(ref, { once: true }); // Trigger only once when in view
+  const ref = React.useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <div className="py-[7.5%]">
+    <div className="py-5">
       <div
-        className={`${styles.paddingX} ${styles.paddingY} lg:w-[75%] m-auto`}
+        className={`${styles.paddingX} ${styles.paddingY} lg:w-[75%] m-auto border-l-2 border-gradient`}
       >
-        <motion.div variants={textVariant()}>
+        <motion.div variants={textVariant()} className="mb-9">
           <h2 className={styles.heroSubHeaderText}>About me.</h2>
         </motion.div>
         <motion.p
@@ -32,7 +32,7 @@ const About = () => {
           learner and I learn by discovering exciting concepts online and
           bringing them to life in my projects. I take pride in consistently
           going the extra mile and improving my skills with every challenge I
-          face. Take a look around to explore my journey, and aspirations in the
+          face.Take a look around to explore my journey, and aspirations in the
           world of software development!
         </motion.p>
       </div>

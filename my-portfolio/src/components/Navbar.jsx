@@ -4,14 +4,37 @@ import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
+import { s } from "framer-motion/client";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+  const [scrolled, setscrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+
+      if (scrollTop > 100) {
+        setscrolled(true);
+      } else {
+        setscrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 `}
+      className={`${
+        styles.paddingX
+      } fixed w-full flex items-center py-5 top-0 z-20  ${
+        scrolled ? "bg-primary" : "bg-transparent"
+      }`}
     >
       <div className="w-full flex justify-between items-center mx-auto">
         <Link

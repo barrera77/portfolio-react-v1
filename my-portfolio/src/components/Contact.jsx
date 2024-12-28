@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+
+import { styles } from "../styles";
 
 const Contact = () => {
   return <div>Contact</div>;
