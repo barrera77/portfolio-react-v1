@@ -6,8 +6,8 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 
 const Contact = () => {
-  const validationKey = import.meta.env.VITE_EMAIL_VALIDATION_KEY;
-  const serviceKey = import.meta.env.VITE_EMAIL_SERVICE_KEY;
+  const validationKey = import.meta.env.VITE_EMAIL_VALIDATION;
+  const serviceKey = import.meta.env.VITE_EMAIL_SERVICE;
 
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
