@@ -8,11 +8,11 @@ const Tech = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 640px)" });
   const isLarge = useMediaQuery({ query: "(min-width: 1024px)" });
 
-  const sphereCount = isMobile ? 7 : isLarge ? 12 : 10;
+  const sphereCount = isMobile ? 6 : isLarge ? 12 : 10;
   return (
     <>
       <div className="mb-6 xs:pl-0 md:pl-6">
-        <p className={`${styles.heroSubText} m-auto mt-4 max-w-3xl lg:pl-5`}>
+        <p className={`${styles.heroSubText} m-auto xs:mt-0 max-w-3xl lg:pl-5`}>
           These are some technologies I have been working with lately:
         </p>
       </div>

@@ -6,10 +6,13 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 
 const Contact = () => {
+  const validationKey = import.meta.env.VITE_EMAIL_VALIDATION_KEY;
+  const serviceKey = import.meta.env.VITE_EMAIL_SERVICE_KEY;
+
   const formRef = useRef(null);
   const [form, setForm] = useState({ name: "", email: "", message: "" });
 
-  const [loading, setloading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (event) => {
     const { target } = event;
@@ -19,7 +22,28 @@ const Contact = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setloading(true);
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        serviceKey,
+        "portfolio_template",
+        formRef.current,
+        validationKey
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Message sent successfully!");
+          setForm({ name: "", email: "", message: "" });
+          setLoading(false);
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert("Failed to send message. Please try again.");
+          setLoading(false);
+        }
+      );
   };
 
   return (
@@ -53,7 +77,7 @@ const Contact = () => {
             <div>
               <div className="flex xs:flex-col md:flex-row justify-between">
                 <div className="md:w-[45%] xs:w-full">
-                  <label for="name" className="text-white text-[18px]">
+                  <label htmlFor="name" className="text-white text-[18px]">
                     Full Name*
                   </label>
                   <input
@@ -68,7 +92,7 @@ const Contact = () => {
                 </div>
 
                 <div className="md:w-[45%] xs:w-full">
-                  <label for="email" className="text-white text-[18px]">
+                  <label htmlFor="email" className="text-white text-[18px]">
                     Your email*
                   </label>
                   <input
@@ -83,7 +107,7 @@ const Contact = () => {
               </div>
 
               <div className="mt-4">
-                <label for="message" className="text-white text-[18px]">
+                <label htmlFor="message" className="text-white text-[18px]">
                   Your Message*
                 </label>
                 <textarea
@@ -97,11 +121,21 @@ const Contact = () => {
               </div>
             </div>
             <div className="xs:mt-4 mt-8 w-full py-3">
-              <button
+              {/* <button
                 type="submit"
                 className="w-full text-[18px] hover:text-primary hover:bg-white py-2 px-3 rounded-lg bg-transparent hover:border-white border border-secondary text-white"
               >
                 Send Message
+              </button> */}
+
+              <button
+                type="submit"
+                disabled={loading}
+                className={`w-full text-[18px] ${
+                  loading ? "bg-gray-400" : "hover:bg-white hover:text-primary"
+                } py-2 px-3 rounded-lg border border-secondary text-white`}
+              >
+                {loading ? "Sending..." : "Send Message"}
               </button>
             </div>
           </form>
