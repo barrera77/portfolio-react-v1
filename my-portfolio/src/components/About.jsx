@@ -14,19 +14,19 @@ const About = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <div className="py-5">
+    <div className="lg:py-5 mt-6 xl:pt-12">
       <div
-        className={`${styles.paddingX} ${styles.paddingY} lg:w-[75%] m-auto border-l-2 border-gradient`}
+        className={`${styles.paddingX} ${styles.paddingY} sm:pl-4 md:pl-16 md:w-[95%] lg:w-[75%] m-auto border-l-2 border-gradient`}
       >
         <motion.div variants={textVariant()} className="mb-9">
-          <h2 className={styles.heroSubHeaderText}>About me.</h2>
+          <h2 className={styles.heroSubHeaderText}>About me</h2>
         </motion.div>
         <motion.p
           ref={ref}
           variants={fadeIn("", "tween", 0.1, 1)} // Apply fade-in variants
           initial="hidden"
           animate={isInView ? "show" : "hidden"} // Animate only when in view
-          className="mt-4 text-white text-[22px] max-w-3xl leading-[30px]"
+          className={`${styles.heroSubText} "mt-4 max-w-3xl`}
         >
           I am a software development student, driven by curiosity. I'm a quick
           learner and I learn by discovering exciting concepts online and
@@ -36,9 +36,7 @@ const About = () => {
           world of software development!
         </motion.p>
       </div>
-      <p className="mt-4 text-white text-[22px] max-w-3xl leading-[30px] lg:w-[75%] m-auto px-6">
-        These are some technologies I have been working with lately:
-      </p>
+
       <Tech />
     </div>
   );
