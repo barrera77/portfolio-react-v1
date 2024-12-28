@@ -14,7 +14,23 @@ import {
 } from "../assets";
 
 const education = [];
-const projects = [];
+const projects = [
+  {
+    name: "Event Management System",
+    description: "",
+    tags: [
+      {
+        name: "nodeJS",
+      },
+      {
+        name: "ExpressJS",
+      },
+      {
+        name: "MongoDB",
+      },
+    ],
+  },
+];
 
 const technologies = [
   {
