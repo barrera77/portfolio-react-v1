@@ -25,14 +25,14 @@ const technologies = [
     name: "Blazor",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg",
   }, */
-  /*  {
+  {
     name: "SQL Server",
     icon: sqlserver,
-  }, */
-  /*   {
+  },
+  {
     name: "Bootstrap",
     icon: bootstrap,
-  }, */
+  },
   {
     name: "C#",
     icon: csharp,
@@ -41,18 +41,18 @@ const technologies = [
     name: "CSS",
     icon: css,
   },
-  /*   {
+  {
     name: "Docker",
     icon: docker,
-  }, */
+  },
   {
     name: "HTML",
     icon: html,
   },
-  /* {
+  {
     name: "mySQL",
     icon: mysql,
-  }, */
+  },
   {
     name: "NodeJS",
     icon: nodejs,
