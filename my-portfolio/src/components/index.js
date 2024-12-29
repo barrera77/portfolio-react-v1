@@ -4,5 +4,6 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import StarsCanvas from "./canvas/Stars";
+import Footer from "./Footer";
 
-export { About, Contact, Hero, Navbar, Projects, StarsCanvas };
+export { About, Contact, Hero, Navbar, Projects, StarsCanvas, Footer };

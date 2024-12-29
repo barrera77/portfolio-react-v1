@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import {
   About,
   Contact,
+  Footer,
   Hero,
   Navbar,
   Projects,
@@ -22,6 +23,7 @@ const App = () => {
             <Contact />
             <StarsCanvas />
           </div>
+          <Footer />
         </div>
       </BrowserRouter>
     </>

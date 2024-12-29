@@ -15,38 +15,61 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-}) => (
-  <Tilt className="xs:w-[250px] w-full ">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full p-3 rounded-lg shadow-card bg-primary border border-secondary"
-    >
-      <div
-        options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-primary min-h-[180px] rounded-lg"
+}) => {
+  return (
+    <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary p-4 rounded-2xl sm:w-[320px] xs:w-full border border-secondary"
       >
-        <img
-          src={image}
-          alt="project_image"
-          className="w-full object-cover rounded-lg"
-        />
-        <div className="absolute inset-0 flex justify-end m-3"></div>
-      </div>
-      <div className="mt-5">
-        <h3 className="text-white font-bold text-[24px]">{name}</h3>
-        <p className="mt-2 text-white text-[14px]">{description}</p>
-      </div>
+        <div className="relative w-full xs-h[150px] md:h-[180px]">
+          <img
+            src={image}
+            alt="project_image"
+            className="w-full h-full object-cover rounded-2xl"
+          />
 
-      <div className="mt-4 flex flex-wrap gap-2">
-        {tags.map((tag) => (
-          <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-            #{tag.name}
-          </p>
-        ))}
-      </div>
+          <div className="absolute top-0 right-0 md:flex justify-end m-1 px-3 py-1 card-img_hover rounded-3xl bg-primary xs:hidden">
+            {tags.map((tag) => (
+              <p
+                key={`${name}-${tag.name}`}
+                className={`text-[11px] text-white`}
+              >
+                #{tag.name}&nbsp;
+              </p>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <h3 className="text-secondary font-bold xs:text-[18px] sm:text-[24px]">
+            {name}
+          </h3>
+          <p className="mt-2 text-white text-[14px]">{description}</p>
+        </div>
+
+        <div className="w-full text-white mt-4 flex items-center cursor-pointer flex-row justify-between">
+          <button
+            onClick={() => window.open(source_code_link, "_blank")}
+            className="w-[45%] rounded-[5px] border border-secondary py-1 hover:bg-white hover:text-primary hover:border-white"
+          >
+            Demo
+          </button>
+          <button
+            onClick={() => window.open(source_code_link, "_blank")}
+            className="bi-github w-[45%] rounded-[5px] border py-1 border-secondary hover:bg-white hover:text-primary hover:border-white"
+          >
+            <span className="xs:hidden sm:inline">&nbsp; Code</span>
+          </button>
+        </div>
+      </Tilt>
     </motion.div>
-  </Tilt>
-);
+  );
+};
 
 const Projects = () => {
   return (

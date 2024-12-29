@@ -16,7 +16,7 @@ const Tech = () => {
           These are some technologies I have been working with lately:
         </p>
       </div>
-      <div className="flex flex-row flex-wrap justify-center gap-10 lg:w-[75%] m-auto">
+      <div className="flex flex-row flex-wrap justify-center gap-10 lg:w-[90%] m-auto">
         {technologies.slice(0, sphereCount).map((technology) => (
           <div
             className="xs:w-20 xs:h-20 sm:w-24 sm-h-24 md:w-28 md:h-28"

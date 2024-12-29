@@ -66,11 +66,11 @@ const projects = [
     tags: [
       {
         name: "nodeJS",
-        color: "text-blue-500",
+        color: "white",
       },
       {
         name: "ExpressJS",
-        color: "text-green-500",
+        color: "white",
       },
       {
         name: "MongoDB",
