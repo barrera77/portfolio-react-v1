@@ -1,3 +1,4 @@
+import { source } from "framer-motion/client";
 import {
   mongodb,
   react,
@@ -12,23 +13,93 @@ import {
   mysql,
   netcore,
 } from "../assets";
+import { color } from "framer-motion";
 
 const education = [];
 const projects = [
   {
     name: "Event Management System",
-    description: "",
+    description:
+      "A full stack application for managing events using mainly NodeJS, ExpressJS, and MongoDB",
     tags: [
       {
         name: "nodeJS",
+        color: "text-blue-500",
       },
       {
         name: "ExpressJS",
+        color: "text-green-500",
       },
       {
         name: "MongoDB",
+        color: "text-purple-500",
       },
     ],
+    image: "https://placedog.net/500/380",
+    source_code_link: "",
+  },
+  {
+    name: "Event Management System",
+    description:
+      "A full stack application for managing events using mainly NodeJS, ExpressJS, and MongoDB",
+    tags: [
+      {
+        name: "nodeJS",
+        color: "text-blue-500",
+      },
+      {
+        name: "ExpressJS",
+        color: "text-green-500",
+      },
+      {
+        name: "MongoDB",
+        color: "text-purple-500",
+      },
+    ],
+    image: "https://placedog.net/500/380",
+    source_code_link: "",
+  },
+  {
+    name: "Event Management System",
+    description:
+      "A full stack application for managing events using mainly NodeJS, ExpressJS, and MongoDB",
+    tags: [
+      {
+        name: "nodeJS",
+        color: "text-blue-500",
+      },
+      {
+        name: "ExpressJS",
+        color: "text-green-500",
+      },
+      {
+        name: "MongoDB",
+        color: "text-purple-500",
+      },
+    ],
+    image: "https://placedog.net/500/380",
+    source_code_link: "",
+  },
+  {
+    name: "Event Management System",
+    description:
+      "A full stack application for managing events using mainly NodeJS, ExpressJS, and MongoDB",
+    tags: [
+      {
+        name: "nodeJS",
+        color: "text-blue-500",
+      },
+      {
+        name: "ExpressJS",
+        color: "text-green-500",
+      },
+      {
+        name: "MongoDB",
+        color: "text-purple-500",
+      },
+    ],
+    image: "https://placedog.net/500/380",
+    source_code_link: "",
   },
 ];
 
