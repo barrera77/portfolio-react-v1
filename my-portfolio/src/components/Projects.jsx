@@ -92,10 +92,16 @@ const Projects = () => {
             progress.
           </motion.p>
         </div>
-        <div className="mt-20 flex flex-wrap gap-9 px-5 py-8">
-          {projects.map((project, index) => (
-            <ProjectCard key={`project-${index}`} index={index} {...project} />
-          ))}
+        <div className="">
+          <div className="mt-20 flex xs:flex-wrap xs:overflow-y-auto xs:h-[500px] sm:flex-nowrap sm:overflow-x-auto gap-9 px-5 py-8">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={`project-${index}`}
+                index={index}
+                {...project}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
