@@ -11,10 +11,10 @@ import { textVariant } from "../utils/motion";
 
 const ProjectCard = ({ index, ...project }) => {
   const isMobile = useMediaQuery({ query: "(max-width: 639px)" });
-  const direction = isMobile ? "up" : "right";
+  const direction = isMobile ? "up" : "";
 
   return (
-    <motion.div variants={fadeIn(direction, "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn(direction, "", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
