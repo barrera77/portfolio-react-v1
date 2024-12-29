@@ -37,13 +37,15 @@ h2 {
   background: linear-gradient(
     180deg,
     rgba(134, 129, 129, 1) 0%,
-    rgba(2, 2, 28, 1) 57%
+    rgba(68, 68, 112, 1) 20%,
+    rgba(2, 2, 28, 1) 55%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
   background: -webkit-linear-gradient(
     180deg,
     rgba(134, 129, 129, 1) 0%,
-    rgba(2, 2, 28, 1) 57%
+    rgba(68, 68, 112, 1) 20%,
+    rgba(2, 2, 28, 1) 55%
   ); /* Chrome10-25,Safari5.1-6 */
 }
 

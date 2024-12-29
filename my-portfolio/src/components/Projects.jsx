@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
@@ -8,16 +9,12 @@ import { projects } from "../constants";
 import { fadeIn } from "../utils/motion";
 import { textVariant } from "../utils/motion";
 
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-}) => {
+const ProjectCard = ({ index, ...project }) => {
+  const isMobile = useMediaQuery({ query: "(max-width: 639px)" });
+  const direction = isMobile ? "up" : "right";
+
   return (
-    <motion.div variants={fadeIn("right", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn(direction, "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -28,15 +25,15 @@ const ProjectCard = ({
       >
         <div className="relative w-full xs-h[150px] md:h-[180px]">
           <img
-            src={image}
+            src={project.image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
 
           <div className="absolute top-0 right-0 md:flex justify-end m-1 px-3 py-1 card-img_hover rounded-3xl bg-primary xs:hidden">
-            {tags.map((tag) => (
+            {project.tags.map((tag) => (
               <p
-                key={`${name}-${tag.name}`}
+                key={`${project.name}-${tag.name}`}
                 className={`text-[11px] text-white`}
               >
                 #{tag.name}&nbsp;
@@ -47,20 +44,20 @@ const ProjectCard = ({
 
         <div className="mt-5">
           <h3 className="text-secondary font-bold xs:text-[18px] sm:text-[24px]">
-            {name}
+            {project.name}
           </h3>
-          <p className="mt-2 text-white text-[14px]">{description}</p>
+          <p className="mt-2 text-white text-[14px]">{project.description}</p>
         </div>
 
         <div className="w-full text-white mt-4 flex items-center cursor-pointer flex-row justify-between">
           <button
-            onClick={() => window.open(source_code_link, "_blank")}
+            onClick={() => window.open(project.source_code_link, "_blank")}
             className="w-[45%] rounded-[5px] border border-secondary py-1 hover:bg-white hover:text-primary hover:border-white"
           >
             Demo
           </button>
           <button
-            onClick={() => window.open(source_code_link, "_blank")}
+            onClick={() => window.open(project.source_code_link, "_blank")}
             className="bi-github w-[45%] rounded-[5px] border py-1 border-secondary hover:bg-white hover:text-primary hover:border-white"
           >
             <span className="xs:hidden sm:inline">&nbsp; Code</span>
@@ -93,7 +90,7 @@ const Projects = () => {
           </motion.p>
         </div>
         <div className="">
-          <div className="mt-20 flex xs:flex-wrap xs:overflow-y-auto xs:h-[500px] sm:flex-nowrap sm:overflow-x-auto gap-9 px-5 py-8">
+          <div className="mt-20 flex xs:flex-wrap xs:overflow-y-auto xs:h-[500px] sm:h-auto sm:flex-nowrap sm:overflow-x-auto gap-9 px-5 py-8">
             {projects.map((project, index) => (
               <ProjectCard
                 key={`project-${index}`}
