@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
@@ -21,7 +20,7 @@ const ProjectCard = ({ index, ...project }) => {
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-4 rounded-2xl sm:w-[320px] xs:w-full border border-secondary"
+        className="bg-tertiary p-4 rounded-2xl sm:w-[320px] xs:w-full border border-secondary "
       >
         <div className="relative w-full xs-h[150px] md:h-[180px]">
           <img
@@ -51,7 +50,7 @@ const ProjectCard = ({ index, ...project }) => {
 
         <div className="w-full text-white mt-4 flex items-center cursor-pointer flex-row justify-between">
           <button
-            onClick={() => window.open(project.source_code_link, "_blank")}
+            onClick={() => window.open(project.demo_link, "_blank")}
             className="w-[45%] rounded-[5px] border border-secondary py-1 hover:bg-white hover:text-primary hover:border-white"
           >
             Demo
@@ -73,7 +72,7 @@ const Projects = () => {
     <div className=" xl:mt-12 xl:flex-row flex gap-10 overflow-hidden">
       <div className="w-full ">
         <div
-          className={`${styles.paddingY} ${styles.paddingX} sm:pl-4 md:pl-16 md:w-[95%] lg:w-[75%] m-auto border-l-2 border-gradient`}
+          className={`${styles.paddingY} ${styles.paddingX} sm:pl-4 md:pl-16 md:w-[95%] lg:w-[75%] m-auto border-l-2 border-gradient md:max-h-[435px]`}
         >
           <motion.div variants={textVariant()}>
             <h2 className={`${styles.heroSubHeaderText} mb-8`}>Projects</h2>
@@ -82,11 +81,9 @@ const Projects = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className={`${styles.heroSubText} mt-4 max-w-3xl`}
           >
-            These are some of the projects I’ve worked on during my studies,
-            highlighting my ability to learn, adapt, and apply concepts to
-            create functional and meaningful solutions. While still in the early
-            stages of my journey, I’m excited to share these examples of my
-            progress.
+            These initial projects showcase my approach to learning, adapting, 
+            and applying concepts to both coursework and personal projects, 
+            all aimed at advancing my skills toward becoming a proficient full-stack developer.
           </motion.p>
         </div>
         <div className="">

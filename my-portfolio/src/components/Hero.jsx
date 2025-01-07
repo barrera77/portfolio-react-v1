@@ -1,4 +1,3 @@
-import React from "react";
 import Navbar from "./Navbar";
 import { styles } from "../styles";
 
@@ -23,11 +22,13 @@ const Hero = () => {
           <div
             className={`${styles.paddingX} lg:${styles.paddingY} lg:mt-[10%] xs:p-0 xl:w-[60%] lg:w-[90%] xs:w-[100%] flex flex-row gap-4 xs:flex-col md:flex-row xs:mt-[30px]`}
           >
-            <a href="" className={`${styles.headerButton} `}>
-              <i class="bi bi-linkedin header-button-icon"></i> My Linked-in
+            <a href="https://linkedin.com/in/manuel-alva-770809" className={`${styles.headerButton} `} target="_blank"
+              rel="noopener noreferrer">
+              <i className="bi bi-linkedin header-button-icon"></i> My Linked-in
             </a>
-            <a href="" className={`${styles.headerButton}`}>
-              <i class="bi bi-github header-button-icon"></i> Github
+            <a href="https://github.com/barrera77" className={`${styles.headerButton}`}  target="_blank"
+              rel="noopener noreferrer">
+              <i className="bi bi-github header-button-icon"></i> Github
             </a>
           </div>
         </header>

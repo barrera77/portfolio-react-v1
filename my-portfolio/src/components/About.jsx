@@ -28,12 +28,20 @@ const About = () => {
           animate={isInView ? "show" : "hidden"} // Animate only when in view
           className={`${styles.heroSubText} "mt-4 max-w-3xl`}
         >
-          I am a software development student, driven by curiosity. I'm a quick
+          {/* I am a software development student, driven by curiosity. I'm a quick
           learner and I learn by discovering exciting concepts online and
           bringing them to life in my projects. I take pride in consistently
           going the extra mile and improving my skills with every challenge I
           face.Take a look around to explore my journey, and aspirations in the
-          world of software development!
+          world of software development! */}
+
+          I am a software development student who thrives on curiosity and reinvention. 
+          My desire to understand how things work—not just in technology, but in the world 
+          around me—drives me to explore the intricacies of coding and uncover better 
+          solutions in software development. Each challenge I face is a puzzle to solve,
+           an opportunity to grow, and a step toward transforming myself, my coding skills, 
+           and the quality of my deliverables. Explore my portfolio to see how my passion 
+           and aspirations in the world of software development!
         </motion.p>
       </div>
 

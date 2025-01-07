@@ -12,15 +12,18 @@ import {
   html,
   mysql,
   netcore,
+  assessment1,
+  assessment2,
+  finalProject
 } from "../assets";
 import { color } from "framer-motion";
 
 const education = [];
 const projects = [
   {
-    name: "Event Management System",
+    name: "Airline Ticket Reservation",
     description:
-      "A full stack application for managing events using mainly NodeJS, ExpressJS, and MongoDB",
+      "A full stack application simulating an airline ticket reservation site using mainly NodeJS, ExpressJS, and MSSQL.",
     tags: [
       {
         name: "nodeJS",
@@ -31,12 +34,13 @@ const projects = [
         color: "text-green-500",
       },
       {
-        name: "MongoDB",
+        name: "MSSQL",
         color: "text-purple-500",
       },
     ],
-    image: "https://placedog.net/500/380",
-    source_code_link: "",
+    image: finalProject,
+    source_code_link: "https://github.com/barrera77/sodv1251-final-project.git",
+    demo_link:"https://sodv1251-final-project-latest.onrender.com",
   },
   {
     name: "Event Management System",
@@ -56,13 +60,14 @@ const projects = [
         color: "text-purple-500",
       },
     ],
-    image: "https://placedog.net/500/380",
-    source_code_link: "",
+    image: assessment2,
+    source_code_link: "https://github.com/barrera77/sodv1251-assessment-2.git",
+    demo_link:"https://sodv1251-assessment-2-latest.onrender.com",
   },
   {
-    name: "Event Management System",
+    name: "e-Commerce Website",
     description:
-      "A full stack application for managing events using mainly NodeJS, ExpressJS, and MongoDB",
+      "A server-sidee-commerce simulation featuring inventory tracking, customer registration, and CRUD operations. Built with JavaScript, Node.js, includes a management system and storefront, deployed using Docker.",
     tags: [
       {
         name: "nodeJS",
@@ -73,14 +78,15 @@ const projects = [
         color: "white",
       },
       {
-        name: "MongoDB",
+        name: "Bootstrap",
         color: "text-purple-500",
       },
     ],
-    image: "https://placedog.net/500/380",
-    source_code_link: "",
+    image: assessment1,
+    source_code_link: "https://github.com/barrera77/sodv1251-assesment-1.git",
+    demo_link: "https://sodv1251-assesment-1-latest.onrender.com"
   },
-  {
+  /* {
     name: "Event Management System",
     description:
       "A full stack application for managing events using mainly NodeJS, ExpressJS, and MongoDB",
@@ -100,7 +106,7 @@ const projects = [
     ],
     image: "https://placedog.net/500/380",
     source_code_link: "",
-  },
+  }, */
 ];
 
 const technologies = [

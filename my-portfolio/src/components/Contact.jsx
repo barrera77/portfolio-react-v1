@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import  { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
@@ -58,11 +57,11 @@ const Contact = () => {
           </p>
 
           <p className={`${styles.heroSubText} mt-4 max-w-3xl`}>
+            Have an opportunity, or just want to say hello? Feel free to leave a message below.
+            <br />
+            <br />
             Thank you for taking the time to check my website!
-            <br />
-            <br />
-            Have an opportunity, or just want to say hello? Please write a
-            message below, and I'll get back to you as soon as possible.
+            
           </p>
         </div>
 

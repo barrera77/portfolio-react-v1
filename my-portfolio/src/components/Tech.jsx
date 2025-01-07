@@ -13,7 +13,7 @@ const Tech = () => {
     <>
       <div className="mb-6 xs:pl-0 md:pl-6">
         <p className={`${styles.heroSubText} m-auto xs:mt-0 max-w-3xl lg:pl-5`}>
-          These are some technologies I have been working with lately:
+         Current proficiency in the following technologies:
         </p>
       </div>
       <div className="flex flex-row flex-wrap justify-center gap-10 lg:w-[90%] m-auto">
