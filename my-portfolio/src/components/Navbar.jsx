@@ -5,7 +5,6 @@ import { styles } from "../styles";
 import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
-
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -76,7 +75,7 @@ const Navbar = () => {
             }}
           >
             <a
-              href="https://www.dropbox.com/scl/fi/z3ukwn0e0ckwibtnxf1fy/Manuel-Alva-Resume.pdf?rlkey=a4hxv0i7zkz32ju57kedyr89l&st=nheuw4v1&dl=0"
+              href="https://www.dropbox.com/scl/fi/tlgd54a521uu072o1od0u/Resume-Manuel-Alva.pdf?rlkey=utov5z0okhhg9zm1uxnqz0yd2&st=b5ip7g9s&dl=0"
               className="border-secondary border py-1 px-3 rounded-md hover:text-primary hover:bg-white hover:border-white"
               target="_blank"
               rel="noopener noreferrer"
