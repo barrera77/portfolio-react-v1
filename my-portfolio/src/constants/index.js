@@ -14,12 +14,35 @@ import {
   netcore,
   assessment1,
   assessment2,
-  finalProject
+  finalProject,
+  foodReCipes,
 } from "../assets";
 import { color } from "framer-motion";
 
 const education = [];
 const projects = [
+  {
+    name: "Food Recipes Website",
+    description:
+      "A responsive front-end web application using React, Vite, and Tailwind CSS, search for recipes based on ingredients, dietary preferences, and categories.",
+    tags: [
+      {
+        name: "ReactJS",
+        color: "text-blue-500",
+      },
+      {
+        name: "Vite",
+        color: "text-green-500",
+      },
+      {
+        name: "TailwindCSS",
+        color: "text-purple-500",
+      },
+    ],
+    image: foodReCipes,
+    source_code_link: "https://github.com/barrera77/SODV1253-assignment-2.git",
+    demo_link: "https://sodv-1253-assignment-2.vercel.app/",
+  },
   {
     name: "Airline Ticket Reservation",
     description:
@@ -40,7 +63,7 @@ const projects = [
     ],
     image: finalProject,
     source_code_link: "https://github.com/barrera77/sodv1251-final-project.git",
-    demo_link:"https://sodv1251-final-project-latest.onrender.com",
+    demo_link: "https://sodv1251-final-project-latest.onrender.com",
   },
   {
     name: "Event Management System",
@@ -62,7 +85,7 @@ const projects = [
     ],
     image: assessment2,
     source_code_link: "https://github.com/barrera77/sodv1251-assessment-2.git",
-    demo_link:"https://sodv1251-assessment-2-latest.onrender.com",
+    demo_link: "https://sodv1251-assessment-2-latest.onrender.com",
   },
   {
     name: "e-Commerce Website",
@@ -84,29 +107,8 @@ const projects = [
     ],
     image: assessment1,
     source_code_link: "https://github.com/barrera77/sodv1251-assesment-1.git",
-    demo_link: "https://sodv1251-assesment-1-latest.onrender.com"
+    demo_link: "https://sodv1251-assesment-1-latest.onrender.com",
   },
-  /* {
-    name: "Event Management System",
-    description:
-      "A full stack application for managing events using mainly NodeJS, ExpressJS, and MongoDB",
-    tags: [
-      {
-        name: "nodeJS",
-        color: "text-blue-500",
-      },
-      {
-        name: "ExpressJS",
-        color: "text-green-500",
-      },
-      {
-        name: "MongoDB",
-        color: "text-purple-500",
-      },
-    ],
-    image: "https://placedog.net/500/380",
-    source_code_link: "",
-  }, */
 ];
 
 const technologies = [

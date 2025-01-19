@@ -14,10 +14,10 @@ import bootstrap from "./tech/bootstrap.png";
 import html from "./tech/html.png";
 import mysql from "./tech/mysql.png";
 import netcore from "./tech/netcore.png";
-import assessment1 from "./projects/assessment1.png"
-import assessment2 from "./projects/assessment2.png"
-import finalProject from "./projects/finalProject.png"
-
+import assessment1 from "./projects/assessment1.png";
+import assessment2 from "./projects/assessment2.png";
+import finalProject from "./projects/finalProject.png";
+import foodReCipes from "./projects/recipe-website.png";
 
 export {
   logo,
@@ -38,5 +38,6 @@ export {
   sqlserver,
   assessment1,
   assessment2,
-  finalProject
+  finalProject,
+  foodReCipes,
 };

@@ -20,7 +20,7 @@ const ProjectCard = ({ index, ...project }) => {
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-4 rounded-2xl sm:w-[320px] xs:w-full border border-secondary "
+        className="bg-tertiary p-4 rounded-2xl sm:w-[320px] xs:w-full border border-secondary"
       >
         <div className="relative w-full xs-h[150px] md:h-[180px]">
           <img
@@ -41,7 +41,7 @@ const ProjectCard = ({ index, ...project }) => {
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 min-h-[150px]">
           <h3 className="text-secondary font-bold xs:text-[18px] sm:text-[24px]">
             {project.name}
           </h3>
@@ -81,9 +81,10 @@ const Projects = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className={`${styles.heroSubText} mt-4 max-w-3xl`}
           >
-            These initial projects showcase my approach to learning, adapting, 
-            and applying concepts to both coursework and personal projects, 
-            all aimed at advancing my skills toward becoming a proficient full-stack developer.
+            These initial projects showcase my approach to learning, adapting,
+            and applying concepts to both coursework and personal projects, all
+            aimed at advancing my skills toward becoming a proficient full-stack
+            developer.
           </motion.p>
         </div>
         <div className="">
