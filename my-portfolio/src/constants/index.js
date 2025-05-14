@@ -43,7 +43,7 @@ const projects = [
     source_code_link: "https://github.com/barrera77/SODV1253-assignment-2.git",
     demo_link: "https://sodv-1253-assignment-2.vercel.app/",
   },
-  {
+  /* {
     name: "Airline Ticket Reservation",
     description:
       "A full stack application simulating an airline ticket reservation site using mainly NodeJS, ExpressJS, and MSSQL.",
@@ -64,7 +64,7 @@ const projects = [
     image: finalProject,
     source_code_link: "https://github.com/barrera77/sodv1251-final-project.git",
     demo_link: "https://sodv1251-final-project-latest.onrender.com",
-  },
+  }, */
   {
     name: "Event Management System",
     description:
