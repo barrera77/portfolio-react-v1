@@ -87,7 +87,7 @@ const projects = [
     source_code_link: "https://github.com/barrera77/sodv1251-assessment-2.git",
     demo_link: "https://sodv1251-assessment-2-latest.onrender.com",
   },
-  {
+  /* {
     name: "e-Commerce Website",
     description:
       "A server-sidee-commerce simulation featuring inventory tracking, customer registration, and CRUD operations. Built with JavaScript, Node.js, includes a management system and storefront, deployed using Docker.",
@@ -108,7 +108,7 @@ const projects = [
     image: assessment1,
     source_code_link: "https://github.com/barrera77/sodv1251-assesment-1.git",
     demo_link: "https://sodv1251-assesment-1-latest.onrender.com",
-  },
+  }, */
 ];
 
 const technologies = [
