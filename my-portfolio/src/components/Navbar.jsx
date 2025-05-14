@@ -75,7 +75,7 @@ const Navbar = () => {
             }}
           >
             <a
-              href="https://www.dropbox.com/scl/fi/tlgd54a521uu072o1od0u/Resume-Manuel-Alva.pdf?rlkey=utov5z0okhhg9zm1uxnqz0yd2&st=b5ip7g9s&dl=0"
+              href="https://www.dropbox.com/scl/fi/0bl4ucms8t31o8paoy1et/Resume-Manuel-Alva.pdf?rlkey=6c5pu0ev8lhovgehlh0kprdrb&st=o9cjja5m&dl=0"
               className="border-secondary border py-1 px-3 rounded-md hover:text-primary hover:bg-white hover:border-white"
               target="_blank"
               rel="noopener noreferrer"
